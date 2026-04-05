@@ -1,7 +1,0 @@
-{
-  "name": "OWN Audio",
-  "description": "An intelligent AI transcription assistant that captures audio, generates structured summaries, and allows you to chat with your recordings.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}
