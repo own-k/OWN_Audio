@@ -1,4 +1,5 @@
-<img width="1258" height="365" alt="CleanShot 2025-12-17 at 00 03 12" src="https://github.com/user-attachments/assets/f7aba4b1-6f4c-4893-bb18-a9d0e0864d8f" />
+<img width="2906" height="618" alt="Shot Dia175026" src="https://github.com/user-attachments/assets/5d9e114c-061b-45b2-a259-2b4a32135616" />
+
 
 ## Demo (video)
 
