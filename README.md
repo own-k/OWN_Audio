@@ -3,32 +3,62 @@
 
 
 
-# OWN-Audio
-Turn audio into study-ready knowledge: **transcript → summary → mind map → tutor**.  
+# OWN Audio
 
-## What you can do
-- Upload or record audio
-- Get a cleaned **transcript**
-- Generate a **summary** (TL;DR + key points + action items)
-- Create a **mind map** (topic → subtopics → details)
-- Use a **tutor** that answers *only from the transcript*
-- Work in **19 languages**
+Audio-to-knowledge pipeline. Record or import audio, extract structured summaries, generate mind maps, and query content through a context-aware AI tutor. Recordings stored locally on-device.
 
-## How it works
-1. Audio is converted to a transcript
-2. The transcript is used to generate:
-   - summary
-   - mind map
-   - tutor responses (grounded in the transcript)
-  
+(https://github.com/user-attachments/assets/51cada1b-fd8c-4dde-bda9-475f0fcf7a10)
+
+---
+
+## Features
+
+- **Audio capture & import** — Record directly or import existing audio files
+- **Transcription & summarization** — Gemini-powered transcription with structured summary generation
+- **Mind map generation** — Visual knowledge graphs derived from audio content
+- **Contextual Q&A** — AI tutor grounded in source audio — no hallucinated answers
+- **Local-first storage** — All recordings persist in local device storage
+
+---
+
+## Architecture
+
+```
+Audio Input (record / import)
+        ↓
+  Local Storage (on-device)
+        ↓
+  Gemini API (transcription + processing)
+        ↓
+  Structured Summary ──→ Mind Map Generator
+        ↓
+  Context-Aware Q&A
+```
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Client | React Native, TypeScript |
+| Audio Processing | Gemini API |
+| AI/NLP | Gemini API — transcription, summarization, entity extraction |
+| Storage | Local device filesystem |
+
+---
+
+## Motivation
+
+Students spend hours scrubbing through lecture recordings to locate specific information. OWN Audio makes audio content searchable and structured while keeping recordings stored on the user's device.
+
+---
 
 
-https://github.com/user-attachments/assets/51cada1b-fd8c-4dde-bda9-475f0fcf7a10
+## Status
 
-## Getting started
-1. Install dependencies:
-   npm install
-2. Set the VITE_GEMINI_API_KEY in **.env.local** to your Gemini API key
-3. Run the app:
-   npm run dev
+In production. Active user base at Millat Umidi School, Tashkent.
 
+---
+
+[Komron Keldiyorov](https://github.com/own-k)
